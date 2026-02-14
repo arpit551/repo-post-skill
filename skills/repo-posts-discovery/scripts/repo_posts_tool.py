@@ -15,6 +15,7 @@ import argparse
 import hashlib
 import heapq
 import html
+import inspect
 import json
 import math
 import os
@@ -24,7 +25,7 @@ import subprocess
 import sys
 from array import array
 from collections import Counter
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass as _dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -69,6 +70,14 @@ SYNONYM_CANONICAL: dict[str, str] = {
     "devtool": "tool",
     "devtools": "tool",
 }
+
+# Python 3.9 doesn't support dataclass(slots=...); ignore that kwarg there.
+if "slots" in inspect.signature(_dataclass).parameters:
+    dataclass = _dataclass
+else:
+    def dataclass(*args, **kwargs):
+        kwargs.pop("slots", None)
+        return _dataclass(*args, **kwargs)
 
 
 @dataclass(slots=True)
