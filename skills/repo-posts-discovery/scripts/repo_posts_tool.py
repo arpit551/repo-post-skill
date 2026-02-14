@@ -2,7 +2,7 @@
 """Skill utility for syncing and searching repo_posts without MCP.
 
 Usage examples:
-  repo_posts_tool.py sync --bootstrap-limit 1000
+  repo_posts_tool.py sync
   repo_posts_tool.py latest --limit 10
   repo_posts_tool.py grep --pattern 'mcp|model context protocol' --limit 20
   repo_posts_tool.py semantic --query 'open source ai agent framework' --limit 15
@@ -38,6 +38,8 @@ DEFAULT_FEED_URL = "https://tom-doerr.github.io/repo_posts/feed.xml"
 DEFAULT_SEARCH_INDEX_URL = "https://tom-doerr.github.io/repo_posts/assets/search-index.json"
 DEFAULT_BASE_URL = "https://tom-doerr.github.io/repo_posts"
 DEFAULT_AUTO_SYNC_MAX_AGE_MINUTES = 1440
+DEFAULT_AUTO_SYNC_BOOTSTRAP_LIMIT = 0
+DEFAULT_AUTO_SYNC_FEED_LIMIT = 0
 
 CACHE_FILE = "posts.jsonl"
 STATE_FILE = "state.json"
@@ -220,14 +222,14 @@ def _build_parser() -> argparse.ArgumentParser:
         p.add_argument(
             "--auto-sync-bootstrap-limit",
             type=int,
-            default=1200,
-            help="Bootstrap limit used by auto-sync when cache is empty",
+            default=DEFAULT_AUTO_SYNC_BOOTSTRAP_LIMIT,
+            help="Bootstrap limit used by auto-sync when cache is empty (0=all)",
         )
         p.add_argument(
             "--auto-sync-feed-limit",
             type=int,
-            default=300,
-            help="Feed limit used by auto-sync incremental updates",
+            default=DEFAULT_AUTO_SYNC_FEED_LIMIT,
+            help="Feed limit used by auto-sync incremental updates (0=all)",
         )
         p.add_argument(
             "--with-github",

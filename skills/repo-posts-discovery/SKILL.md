@@ -39,16 +39,12 @@ cd /Users/arpit/Dev/repo-post-skill-mcp/skills/repo-posts-discovery
 scripts/repo_posts_tool.py sync
 ```
 
-Fast limited sync:
-
-```bash
-scripts/repo_posts_tool.py sync --bootstrap-limit 1200 --feed-limit 300
-```
+Note: default sync is uncapped (`0=all`) and fetches the full available dataset.
 
 Full rebuild:
 
 ```bash
-scripts/repo_posts_tool.py sync --force-full
+scripts/repo_posts_tool.py sync --force-full --bootstrap-limit 0 --feed-limit 0
 ```
 
 ### Latest

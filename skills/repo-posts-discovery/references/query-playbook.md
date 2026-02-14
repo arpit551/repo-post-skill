@@ -2,7 +2,7 @@
 
 ## Daily discovery flow
 
-1. `scripts/repo_posts_tool.py sync --feed-limit 200`
+1. `scripts/repo_posts_tool.py sync`
 2. `scripts/repo_posts_tool.py hybrid --query 'interesting developer tools' --limit 20`
 3. Refine with grep if needed.
 
