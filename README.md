@@ -7,7 +7,7 @@ Discover high-signal open-source repositories from `repo_posts` so teams can reu
 Use your published marketplace repo:
 
 ```text
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add arpit551/repo-post-skill
 /plugin install repo-post-skill@repo-posts-marketplace
 ```
 
