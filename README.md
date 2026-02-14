@@ -1,4 +1,4 @@
-# repo-post-skill-mcp
+# repo-post-skill
 
 This workspace now focuses on a **skill-first** implementation for `repo_posts` discovery.
 

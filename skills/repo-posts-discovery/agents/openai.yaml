@@ -1,4 +1,4 @@
 interface:
-  display_name: "Repo Posts Discovery"
-  short_description: "Find and filter repo_posts OSS recommendations"
-  default_prompt: "Sync repo_posts cache, run hybrid+semantic+grep search, and return the best repositories with links and match reasons."
+  display_name: "Repo Post Skill"
+  short_description: "Discover and rank repos from repo_posts"
+  default_prompt: "Sync repo_posts data, search with hybrid and regex filters, and return top repositories with links, stars, and latest commit dates."

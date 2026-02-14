@@ -3,7 +3,7 @@ name: repo-posts-discovery
 description: Discover high-signal open-source repositories from tom-doerr/repo_posts using local skill scripts with append-oriented syncing, semantic search, regex/grep filtering, and hybrid ranking. Use when users ask for latest repositories, curated repo recommendations, niche OSS discovery, or targeted searches like "find MCP repos" and "grep for self-hosted security tools".
 ---
 
-# Repo Posts Discovery
+# Repo Post Skill
 
 ## Overview
 
