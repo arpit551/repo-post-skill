@@ -1,13 +1,13 @@
 {
-  "name": "arpit-repo-posts-marketplace",
+  "name": "repo-posts-marketplace",
   "owner": {
-    "name": "Arpit"
+    "name": "repo-post-skill"
   },
   "plugins": [
     {
       "name": "repo-post-skill",
       "source": ".",
-      "description": "Skill-first repo_posts discovery with append-sync, semantic search, grep filtering, hybrid ranking, and optional GitHub stars/latest commit enrichment.",
+      "description": "Skill-first repo_posts discovery with semantic search, grep filtering, hybrid ranking, and GitHub stars/commit enrichment.",
       "version": "1.0.0"
     }
   ]
