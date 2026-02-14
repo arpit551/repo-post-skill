@@ -1,0 +1,10 @@
+{
+  "name": "repo-post-skill",
+  "description": "Discover and rank high-signal open-source repositories from repo_posts with sync, semantic search, regex filters, and hybrid ranking.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Arpit"
+  },
+  "homepage": "https://github.com/arpit551/repo-post-skill",
+  "repository": "https://github.com/arpit551/repo-post-skill"
+}
