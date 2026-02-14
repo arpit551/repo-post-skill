@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "repo-post-skill",
-      "source": ".",
+      "source": "./",
       "description": "Skill-first repo_posts discovery with semantic search, grep filtering, hybrid ranking, and GitHub stars/commit enrichment.",
       "version": "1.0.0"
     }
