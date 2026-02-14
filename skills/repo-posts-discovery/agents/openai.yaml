@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Posts Discovery"
+  short_description: "Find and filter repo_posts OSS recommendations"
+  default_prompt: "Sync repo_posts cache, run hybrid+semantic+grep search, and return the best repositories with links and match reasons."
